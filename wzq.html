@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XHY-星之時|五子棋</title>
+<link rel="shortcut icon" type="image/x-icon" href="logo.png">
+<link rel="stylesheet" href="style.css">
+          <body onContextMenu="alert('禁止查看源代码，您的行为已记录。'); return false" NOOP="if (window.event != null && window.event.button == 2) alert ('Thanks...');">
+</head>
+<body>
+
+<div id="box">
+	<div id="centent">
+		<canvas id="canvas" width="450" height="450"></canvas>
+	</div>
+	<button id="button">撤回</button>
+	<button id="anew">重开</button>
+	<div id="state">
+		<div class="state-chess Bchess"></div>
+		<div class="chessName">黑棋走</div>
+	</div>
+	<div id="winner">
+		<div class="state-chess Bchess"></div>
+		<div class="chessName"></div>
+	</div>
+</div>
+
+<script src="js/script.js"></script>
+<script>
+    game.drawLine()
+    game.canvas.addEventListener("mousedown",game.canvasClick)
+    game.regret_chess.addEventListener("mousedown",game.regret)
+    game.anew.addEventListener("mousedown",game.anewClick)
+ 
+</script>
+<div style="text-align:center;">
+<p><a href="index.html" target="_blank">XHY工作室</a></p>
+</div>
+</body>
+</html>
